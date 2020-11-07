@@ -1,0 +1,10 @@
+---
+- name: test loop
+  hosts: as
+  tasks:  
+    - name: print user name
+      debug:
+        msg: "{{item[0]}}"
+      with_nested:
+        - [123,abc]
+        - [456,deg]
