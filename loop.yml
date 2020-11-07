@@ -1,6 +1,6 @@
 ---
 - name: test loop
-  hosts: as
+  hosts: ac1
   tasks:  
     - name: print user name
       debug:
